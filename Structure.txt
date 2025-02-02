@@ -1,0 +1,39 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import HomePage from "./sections/HomePage";
+import AboutUs from "./sections/AboutUs";
+import ProductsPage from "./sections/ProductsPage";
+import HowItWorks from "./sections/HowItWorks";
+import BulkOrders from "./sections/BulkOrders";
+import FarmerPartnerships from "./sections/FarmerPartnerships";
+import Blog from "./sections/Blog";
+import ContactUs from "./sections/ContactUs";
+import FAQ from "./sections/FAQ";
+import AccountPage from "./sections/AccountPage";
+import CheckoutPage from "./sections/CheckoutPage";
+import Footer from "./components/Footer";
+
+const App = () => {
+  return (
+    <Router>
+      <div className="app-container">
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/about" component={AboutUs} />
+          <Route path="/products" component={ProductsPage} />
+          <Route path="/how-it-works" component={HowItWorks} />
+          <Route path="/bulk-orders" component={BulkOrders} />
+          <Route path="/farmers" component={FarmerPartnerships} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/contact" component={ContactUs} />
+          <Route path="/faq" component={FAQ} />
+          <Route path="/account" component={AccountPage} />
+          <Route path="/checkout" component={CheckoutPage} />
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
+  );
+};
+
+export default App;
