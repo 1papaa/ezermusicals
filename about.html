@@ -3,61 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources - Ezer Music Ministry</title>
-
+    <title>About - Ezer Music Ministry</title>
     <style>
 	body {
 			margin: 0px;
 		}
-        .resources {
-            background-color: #fff9e6;
+        .about {
+            background-color: #fef8e6;
             padding: 50px 20px;
             text-align: center;
             color: #333;
         }
-        .resources h2 {
+        .about h2 {
             font-size: 2rem;
             color: #f9c84d;
             margin-bottom: 20px;
         }
-        .resources p {
+        .about p {
             max-width: 800px;
-            margin: 0 auto 30px;
+            margin: 0 auto 20px;
             line-height: 1.6;
             font-size: 1rem;
         }
-        .resource-category {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+        .about .founder {
             margin-top: 30px;
         }
-        .resource-card {
-            background: white;
-            border-radius: 8px;
-            padding: 20px;
+        .about .founder img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
-        .resource-card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
+        .about .founder h3 {
+            margin-top: 10px;
+            font-size: 1.5rem;
             color: #444;
         }
-        .resource-card p {
-            margin-bottom: 15px;
-        }
-        .resource-card button {
-            background-color: #f9c84d;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        .resource-card button:hover {
-            background-color: #f8b732;
+        .about .testimonies {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #666;
         }
 		header {
             background: linear-gradient(to right, #f9c84d, #a2d5f2);
@@ -118,12 +104,14 @@
 		.social {
 		text-align: center;
 		}
+		
     </style>
 	</head>
 	<body>
 	<header>
-		<nav>
+        <nav>
             <div class="logo"><a href="index.html">Ezer Music Ministry</a></div>
+
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="membership.html">Membership</a></li>
@@ -135,39 +123,34 @@
             </ul>
         </nav>
     </header>
-	<section class="section resources" id="resources">
+	<section class="section about" id="about">
 
-    <h2>Explore Our Resources</h2>
-    <p>We offer a range of resources to support your spiritual growth, including devotionals, worship songs, and more. Find free resources, donation-based content, and official song lyrics below.</p>
+    <h2>About Ezer Music Ministry</h2>
+    <p>Ezer Music Ministry exists to connect hearts to God through Gospel music, creative arts, and inspiring teachings. Our mission is to inspire, uplift, and guide people on their spiritual journey through faith-driven content and community engagement.</p>
+    <p>We believe in the transformative power of music and creative arts to build a closer relationship with God. Join us as we embark on a journey of spiritual growth and worship.</p>
 
-    <div class="resource-category">
-        <div class="resource-card">
-            <h3>Free Resources</h3>
-            <p>Download devotionals and worship songs at no cost to enrich your spiritual journey.</p>
-            <button onclick="window.open('#', '_blank')">Browse Free Resources</button>
-        </div>
-        <div class="resource-card">
-            <h3>Donation-Based Resources</h3>
-            <p>Access exclusive content by making a small donation to support our ministry.</p>
-            <button onclick="window.open('#', '_blank')">View Donation Resources</button>
-        </div>
-        <div class="resource-card">
-            <h3>Official Lyrics</h3>
-            <p>View or download lyrics for our songs. Optionally, receive them via WhatsApp or Telegram.</p>
-            <button onclick="window.open('#', '_blank')">Get Lyrics</button>
-        </div>
+    <div class="founder">
+        <img src="https://raw.githubusercontent.com/1papaa/ezermusicals/refs/heads/master/Ezer.JPG" alt="Ezer - Founder" /> <!-- Placeholder Image -->
+        <h3>Meet Ezer</h3>
+        <p>Ezer is a passionate worship leader, songwriter, and teacher of the Word. With a profound spiritual journey and a deep love for Gospel music, Ezer founded this ministry to share the hope and love found in Christ through music and teachings.</p>
+    </div>
+
+    <div class="testimonies">
+        <p>"Through Ezer Music Ministry, I found peace and purpose in my worship." - Jane D.</p>
+        <p>"The teachings and songs have deepened my faith like never before." - Mark A.</p>
     </div>
 </section>
+</body>
 
 <section class="social">
 	<div class="social-links">
-        <p>Follow us:</p>
+        <p>Follow Us:</p>
 		<a href="http://www.youtube.com/@OurEzer" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
         <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
         <a href="http://instagram.com/ourezerr" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
 		<a href="https://www.tiktok.com/@ourezer?_t=ZM-8tFxDKFwOwv&_r=1" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
 		<a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter/X</a>
-		<a href="#" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+		<a href="#" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a
 		<a href="https://t.me/OurEzer" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
        
     </div>

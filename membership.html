@@ -3,61 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Ezer Music Ministry</title>
+    <title>Membership - Ezer Music Ministry</title>
     <style>
 	body {
 			margin: 0px;
 		}
-	
-        .blog {
-            background-color: #ffffff;
+        .membership {
+            background-color: #e8f4f8;
             padding: 50px 20px;
             text-align: center;
             color: #333;
         }
-        .blog h2 {
+        .membership h2 {
             font-size: 2rem;
-            color: #f9c84d;
+            color: #3a87ad;
             margin-bottom: 20px;
         }
-        .blog p {
+        .membership p {
             max-width: 800px;
             margin: 0 auto 30px;
             line-height: 1.6;
             font-size: 1rem;
         }
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .blog-card {
+        .membership-form {
+            max-width: 500px;
+            margin: 0 auto;
             background: white;
-            border-radius: 8px;
             padding: 20px;
+            border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: left;
         }
-        .blog-card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            color: #444;
-        }
-        .blog-card p {
-            font-size: 0.9rem;
+        .membership-form input, .membership-form textarea, .membership-form button {
+            width: 100%;
+            padding: 10px;
             margin-bottom: 15px;
-            color: #666;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
         }
-        .blog-card a {
-            color: #3a87ad;
-            text-decoration: none;
-            font-weight: bold;
+        .membership-form button {
+            background-color: #3a87ad;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
-        .blog-card a:hover {
-            text-decoration: underline;
+        .membership-form button:hover {
+            background-color: #2d6d8a;
         }
-		
-        header {
+		header {
             background: linear-gradient(to right, #f9c84d, #a2d5f2);
             color: white;
             padding: 20px;
@@ -116,12 +109,15 @@
 		.social {
 		text-align: center;
 		}
-   </style>
+    </style>
 	</head>
 	<body>
 	<header>
+	
         <nav>
+
             <div class="logo"><a href="index.html">Ezer Music Ministry</a></div>
+
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="membership.html">Membership</a></li>
@@ -133,65 +129,19 @@
             </ul>
         </nav>
     </header>
-	<section class="section blog" id="blog">
+<section class="section membership" id="membership">
+    <h2>Join Our Ministry Family</h2>
+    <p>Become a part of Ezer Music Ministry's family and gain access to exclusive content, live sessions, and a supportive community united in worship and spiritual growth.</p>
 
-    <h2>Inspirational Blog</h2>
-    <p>Discover uplifting articles, spiritual insights, and ministry updates to inspire your journey with God.</p>
-
-    <div class="blog-grid">
-        <div class="blog-card">
-            <h3>The Power of Worship in Challenging Times</h3>
-            <p>Learn how worship can strengthen your faith and bring peace during difficult moments.</p>
-            <a href="#">Read More</a>
-        </div>
-        <div class="blog-card">
-            <h3>How Music Connects Us to God</h3>
-            <p>Explore the profound impact of Gospel music in building a closer relationship with God.</p>
-            <a href="#">Read More</a>
-        </div>
-        <div class="blog-card">
-            <h3>Finding Purpose Through Faith and Song</h3>
-            <p>Discover how faith and music can guide you toward your God-given purpose.</p>
-            <a href="#">Read More</a>
-        </div>
-        <div class="blog-card">
-            <h3>Daily Devotion: A Song for Every Morning</h3>
-            <p>Start your day with devotionals paired with meaningful worship songs.</p>
-            <a href="#">Read More</a>
-        </div>
-        <div class="blog-card">
-            <h3>The Role of Creative Arts in Ministry</h3>
-            <p>Understand how creative arts can play a pivotal role in sharing the Gospel.</p>
-            <a href="#">Read More</a>
-        </div>
-        <div class="blog-card">
-            <h3>Building a Prayerful Life with Music</h3>
-            <p>Discover the power of integrating music into your prayer routine.</p>
-            <a href="#">Read More</a>
-        </div>
-        <div class="blog-card">
-            <h3>Overcoming Doubt and Fear with Worship</h3>
-            <p>Learn how worship can help you overcome life’s uncertainties and fears.</p>
-            <a href="#">Read More</a>
-        </div>
-        <div class="blog-card">
-            <h3>The Spiritual Discipline of Gratitude</h3>
-            <p>Explore the importance of gratitude in your spiritual journey.</p>
-            <a href="#">Read More</a>
-        </div>
-        <div class="blog-card">
-            <h3>How Gospel Music Inspires Love and Marriage</h3>
-            <p>Discover how Gospel music can strengthen relationships and marriage bonds.</p>
-            <a href="#">Read More</a>
-        </div>
-        <div class="blog-card">
-            <h3>Ezer’s Journey: Lessons from the Ministry</h3>
-            <p>Gain insights from Ezer’s personal experiences and lessons in ministry.</p>
-            <a href="#">Read More</a>
-        </div>
+    <div class="membership-form">
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="4" placeholder="Tell us why you'd like to join (optional)"></textarea>
+            <button type="submit">Join Now</button>
+        </form>
     </div>
 </section>
-</body>
 
 <section class="social">
 	<div class="social-links">
@@ -206,7 +156,6 @@
        
     </div>
 	</section>
-
 <footer>
         <p>&copy; 2025 Ezer Music Ministry. All Rights Reserved.</p>
     </footer>

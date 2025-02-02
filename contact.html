@@ -3,52 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership - Ezer Music Ministry</title>
+    <title>Contact - Ezer Music Ministry</title>
+
     <style>
 	body {
 			margin: 0px;
 		}
-        .membership {
-            background-color: #e8f4f8;
+        .contact {
+            background-color: #f9f9f9;
             padding: 50px 20px;
             text-align: center;
             color: #333;
         }
-        .membership h2 {
+        .contact h2 {
             font-size: 2rem;
-            color: #3a87ad;
+            color: #f9c84d;
             margin-bottom: 20px;
         }
-        .membership p {
+        .contact p {
             max-width: 800px;
             margin: 0 auto 30px;
             line-height: 1.6;
             font-size: 1rem;
         }
-        .membership-form {
-            max-width: 500px;
+        .contact-form {
+            max-width: 600px;
             margin: 0 auto;
             background: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .membership-form input, .membership-form textarea, .membership-form button {
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
             width: 100%;
-            padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #ccc;
+            padding: 10px;
+            border: 1px solid #ddd;
             border-radius: 5px;
             font-size: 1rem;
         }
-        .membership-form button {
-            background-color: #3a87ad;
+        .contact-form button {
+            background-color: #f9c84d;
             color: white;
-            border: none;
+            font-weight: bold;
             cursor: pointer;
         }
-        .membership-form button:hover {
-            background-color: #2d6d8a;
+        .contact-form button:hover {
+            background-color: #f8b732;
+        }
+        .social-links {
+            margin-top: 30px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #3a87ad;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            color: #2d6d8a;
         }
 		header {
             background: linear-gradient(to right, #f9c84d, #a2d5f2);
@@ -94,28 +109,14 @@
             padding: 1px 0px;
             margin-top: 20px;
         }
-		.social-links {
-            margin-top: 30px;
-        }
-        .social-links a {
-            margin: 0 10px;
-            color: #3a87ad;
-            font-size: 1.2rem;
-            text-decoration: none;
-        }
-        .social-links a:hover {
-            color: #2d6d8a;
-        }
-		.social {
-		text-align: center;
-		}
     </style>
 	</head>
 	<body>
 	<header>
-	
         <nav>
+
             <div class="logo"><a href="index.html">Ezer Music Ministry</a></div>
+
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="membership.html">Membership</a></li>
@@ -127,23 +128,21 @@
             </ul>
         </nav>
     </header>
-<section class="section membership" id="membership">
-    <h2>Join Our Ministry Family</h2>
-    <p>Become a part of Ezer Music Ministry's family and gain access to exclusive content, live sessions, and a supportive community united in worship and spiritual growth.</p>
+<section class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Send us your inquiries or prayer requests, and connect with us on social media.</p>
 
-    <div class="membership-form">
+    <div class="contact-form">
         <form action="#" method="POST">
             <input type="text" name="name" placeholder="Your Name" required />
             <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" rows="4" placeholder="Tell us why you'd like to join (optional)"></textarea>
-            <button type="submit">Join Now</button>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
     </div>
-</section>
 
-<section class="social">
-	<div class="social-links">
-        <p>Follow us:</p>
+    <div class="social-links">
+        <p>Follow Us:</p>
 		<a href="http://www.youtube.com/@OurEzer" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
         <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
         <a href="http://instagram.com/ourezerr" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
@@ -153,7 +152,8 @@
 		<a href="https://t.me/OurEzer" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
        
     </div>
-	</section>
+</section>
+</body>
 <footer>
         <p>&copy; 2025 Ezer Music Ministry. All Rights Reserved.</p>
     </footer>

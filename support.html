@@ -3,67 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Ezer Music Ministry</title>
+    <title>Support - Ezer Music Ministry</title>
 
     <style>
 	body {
 			margin: 0px;
 		}
-        .contact {
+        .support {
             background-color: #f9f9f9;
             padding: 50px 20px;
             text-align: center;
             color: #333;
         }
-        .contact h2 {
+        .support h2 {
             font-size: 2rem;
             color: #f9c84d;
             margin-bottom: 20px;
         }
-        .contact p {
+        .support p {
             max-width: 800px;
             margin: 0 auto 30px;
             line-height: 1.6;
             font-size: 1rem;
         }
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .contact-form input,
-        .contact-form textarea,
-        .contact-form button {
-            width: 100%;
-            margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        .contact-form button {
-            background-color: #f9c84d;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .contact-form button:hover {
-            background-color: #f8b732;
-        }
-        .social-links {
+        .donation-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
             margin-top: 30px;
         }
-        .social-links a {
-            margin: 0 10px;
-            color: #3a87ad;
-            font-size: 1.2rem;
-            text-decoration: none;
+        .donation-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
-        .social-links a:hover {
-            color: #2d6d8a;
+        .donation-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        .donation-card button {
+            background-color: #f9c84d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .donation-card button:hover {
+            background-color: #f8b732;
         }
 		header {
             background: linear-gradient(to right, #f9c84d, #a2d5f2);
@@ -109,12 +100,30 @@
             padding: 1px 0px;
             margin-top: 20px;
         }
+		.social-links {
+            margin-top: 30px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #3a87ad;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            color: #2d6d8a;
+        }
+		.social {
+		text-align: center;
+		}
+		
     </style>
 	</head>
 	<body>
 	<header>
         <nav>
+
             <div class="logo"><a href="index.html">Ezer Music Ministry</a></div>
+
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="membership.html">Membership</a></li>
@@ -126,21 +135,38 @@
             </ul>
         </nav>
     </header>
-<section class="section contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>We'd love to hear from you! Send us your inquiries or prayer requests, and connect with us on social media.</p>
+<section class="section support" id="support">
+    <h2>Support Ezer Music Ministry</h2>
+    <p>Your support helps us spread the message of hope and love through Gospel music, creative arts, and inspiring teachings. Thank you for your generosity.</p>
 
-    <div class="contact-form">
-        <form action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <div class="donation-options">
+        <div class="donation-card">
+            <h3>GoFundMe</h3>
+            <p>Make a donation through our official GoFundMe page.</p>
+            <button onclick="window.open('https://www.gofundme.com', '_blank')">Donate via GoFundMe</button>
+        </div>
+        <div class="donation-card">
+            <h3>Buy Me a Coffee</h3>
+            <p>Support us with a small token of appreciation.</p>
+            <button onclick="window.open('https://www.buymeacoffee.com', '_blank')">Donate via Buy Me a Coffee</button>
+        </div>
+        <div class="donation-card">
+            <h3>Credit Card</h3>
+            <p>Donate securely using your credit card.</p>
+            <button onclick="window.open('#', '_blank')">Donate via Card</button>
+        </div>
+        <div class="donation-card">
+            <h3>MTN Mobile Money</h3>
+            <p>Support us directly through MTN Mobile Money in Ghana.</p>
+            <button onclick="window.open('#', '_blank')">Donate via MTN Mobile Money</button>
+        </div>
     </div>
+</section>
+</body>
 
-    <div class="social-links">
-        <p>Follow Us:</p>
+<section class="social">
+	<div class="social-links">
+        <p>Follow us:</p>
 		<a href="http://www.youtube.com/@OurEzer" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
         <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
         <a href="http://instagram.com/ourezerr" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
@@ -150,8 +176,7 @@
 		<a href="https://t.me/OurEzer" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
        
     </div>
-</section>
-</body>
+	</section>
 <footer>
         <p>&copy; 2025 Ezer Music Ministry. All Rights Reserved.</p>
     </footer>
