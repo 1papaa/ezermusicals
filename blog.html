@@ -36,7 +36,7 @@
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: left;
+            text-align: center;
         }
         .blog-card h3 {
             font-size: 1.2rem;
@@ -116,16 +116,81 @@
 		.social {
 		text-align: center;
 		}
+		@media only screen and (min-width: 768px) {
+        .topnav {
+            display: none;
+        }
+   }
+   
+  @media only screen and (max-width: 600px) {
+        .topnav {
+            display: block;
+        }
+		
+		.nav_menu {
+			display: none;
+		}
+   } 
+
+
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
    </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	</head>
 	<body>
 	<header>
+	<div class="topnav">
+		<!-- Navigation links (hidden by default) -->
+		  <div id="myLinks">
+			<li><a href="about.html">About</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+		  </div>
+		  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
         <nav>
 
             <div class="logo"><a href="index.html">Ezer Music Ministry</a></div>
 
-            <ul>
-                <li><a href="about.html">About</a></li>
+            
+            <ul class="nav_menu">    
+				<li><a href="about.html">About</a></li>
                 <li><a href="membership.html">Membership</a></li>
                 <li><a href="support.html">Support</a></li>
                 <li><a href="resources.html">Resources</a></li>
@@ -186,6 +251,16 @@
             <p>Discover how Gospel music can strengthen relationships and marriage bonds.</p>
             <a href="#">Read More</a>
         </div>
+		<div class="blog-card">
+            <h3>Write New Blog</h3>
+            <p>Explore the importance of gratitude in your spiritual journey.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="blog-card">
+            <h3>Write Another blog</h3>
+            <p>Discover how Gospel music can strengthen relationships and marriage bonds.</p>
+            <a href="#">Read More</a>
+        </div>
         <div class="blog-card">
             <h3>Ezer’s Journey: Lessons from the Ministry</h3>
             <p>Gain insights from Ezer’s personal experiences and lessons in ministry.</p>
@@ -202,7 +277,7 @@
         <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
         <a href="http://instagram.com/ourezerr" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
 		<a href="https://www.tiktok.com/@ourezer?_t=ZM-8tFxDKFwOwv&_r=1" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
-		<a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter/X</a>
+		<a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i> Twitter/X</a>
 		<a href="#" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
 		<a href="https://t.me/OurEzer" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
        
@@ -212,5 +287,15 @@
 <footer>
         <p>&copy; 2025 Ezer Music Ministry. All Rights Reserved.</p>
     </footer>
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myLinks");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+	</script>
 </body>
 </html>
