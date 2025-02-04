@@ -56,6 +56,8 @@
         }
         .cta-buttons {
             margin-top: 20px;
+			display: flex;
+			justify-content: center;
         }
         .cta-buttons a {
             text-decoration: none;
@@ -83,6 +85,7 @@
             background: white;
             padding: 15px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			text-align: center;
         }
         footer {
             background: #333;
@@ -119,15 +122,91 @@
 		.social {
 		text-align: center;
 		}
+		
+		
+
+@media only screen and (min-width: 768px) {
+        .topnav {
+            display: none;
+        }
+   }
+   
+  @media only screen and (max-width: 600px) {
+        .topnav {
+            display: block;
+        }
+		
+		.nav_menu {
+			display: none;
+		}
+   } 
+
+
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 16px;
+  margin-right: 15px;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+ 
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+}
+@media only screen and (max-width: 600px) {
+     .resource {
+  display: block;
+  margin-top: 20px !important;
+}   
+    }
+
+
     </style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav>
-
+		<div class="topnav">
+		<!-- Navigation links (hidden by default) -->
+		  <div id="myLinks">
+			<li><a href="about.html">About</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+		  </div>
+		  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+        <nav >
             <div class="logo"><a href="index.html">Ezer Music Ministry</a></div>
-
-            <ul>
+            <ul class="nav_menu">
                 <li><a href="about.html">About</a></li>
                 <li><a href="membership.html">Membership</a></li>
                 <li><a href="support.html">Support</a></li>
@@ -142,9 +221,9 @@
     <section class="hero">
         <h1>Connecting Hearts to God Through Gospel Music, <br>Creative Arts and Inspiring Teachings</h1>
         <div class="cta-buttons">
-            <a href="#membership">Join Us</a>
-            <a href="#support">Donate Now</a>
-            <a href="#resources">Explore Resources</a>
+            <a href="membership.html">Join Us</a>
+            <a href="support.html">Donate Now</a>
+            <a href="resources.html">Explore Resources</a>
         </div>
     </section>
 	
@@ -156,14 +235,17 @@
         <div class="blog-item">
             <h3>The Power of Worship in Challenging Times</h3>
             <p>Discover how worship can bring peace and strength during difficult moments.</p>
+			<a href="blog.html">Read More</a>
         </div>
         <div class="blog-item">
             <h3>How Music Connects Us to God</h3>
             <p>Explore the spiritual power of music in strengthening faith.</p>
+			<a href="blog.html">Read More</a>
         </div>
         <div class="blog-item">
             <h3>Finding Purpose Through Faith and Song</h3>
             <p>Learn how faith and music can help us discover our God-given purpose.</p>
+			<a href="blog.html">Read More</a>
         </div>
 		
 	</section>
@@ -172,10 +254,10 @@
 	<div class="social-links">
         <p>Follow us:</p>
 		<a href="http://www.youtube.com/@OurEzer" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
-        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
         <a href="http://instagram.com/ourezerr" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
 		<a href="https://www.tiktok.com/@ourezer?_t=ZM-8tFxDKFwOwv&_r=1" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
-		<a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter/X</a>
+		<a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i> Twitter/X</a>
 		<a href="#" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
 		<a href="https://t.me/OurEzer" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
        
@@ -186,5 +268,16 @@
     <footer>
         <p>&copy; 2025 Ezer Music Ministry. All Rights Reserved.</p>
     </footer>
+	
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myLinks");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+	</script>
 </body>
 </html>
